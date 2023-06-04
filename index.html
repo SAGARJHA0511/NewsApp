@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="hello.png" type="icon news">
+</head>
+
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="News-logo">
+                <img src="new news.png" alt="News logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="IPL" onclick="onNavItemClick('IPL')">IPL 2023</li>
+                    <li class="hover-link nav-item" id="INDIA" onclick="onNavItemClick('INDIA')">INDIA</li>
+                    <li class="hover-link nav-item" id="FINANCE" onclick="onNavItemClick('FINANCE')">FINANCE</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+
+
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+
+            </div>
+            <div class="cards-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 30/05/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+                    aliquid suscipit laborum, exercitationem qui non explicabo quasi fugit id? Molestiae fuga
+                    perferendis maiores officia dolores sit iure eaque? Vitae, obcaecati.</p>
+
+            </div>
+
+    </template>
+
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
